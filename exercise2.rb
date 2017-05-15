@@ -6,11 +6,11 @@ print "What was the cost of your meal?"
 cost = gets.chomp.to_i
 
 if service == "bad"
-  puts "I left a (0.12 * #{cost}) dollar meal."
+  puts "I left a $#{0.12 * cost} tip."
 elsif service == "good"
-  puts "I left a (0.15 * #{cost}) dollar tip"
+  puts "I left a $#{0.15 * cost} tip"
 elsif service == "great"
-  puts "I left a (0.18 * #{cost}) dollar tip"
+  puts "I left a $#{0.18 * cost} tip"
 else
 puts "That\'s just crazy"
 end
